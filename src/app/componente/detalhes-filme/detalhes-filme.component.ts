@@ -20,7 +20,10 @@ export class DetalhesFilmeComponent implements OnInit {
     const id = this.route.snapshot.paramMap.get('id')!;
     this.filmeService.getFilmeById(id).subscribe((response: any) => {
       this.filme = response;
+      
     });
   }
+  
 }
+
 

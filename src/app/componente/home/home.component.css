@@ -99,6 +99,7 @@ body {
     padding: 80px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    
   }
   
   .filme-card:hover {
@@ -150,5 +151,46 @@ body {
     height: auto;
 
   }
-  
-  
+  .bttton{
+    background-color:black;
+  color:white;
+  border: none; 
+  border-radius: 25px; 
+  padding: 10px 20px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  cursor: pointer; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; 
+  margin-top: 30px;
+  }
+  button:hover{
+  background-color:#f5c518;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px); 
+}
+
+button:active {
+  background-color:#f5c518;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2); 
+  transform: translateY(0); 
+}
+
+#sub{
+  font-size: 3em; /* Tamanho maior para o título */
+  font-weight: bold;
+  text-transform: uppercase; /* Letras maiúsculas */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  color: #ffcc00; /* Cor dourada */
+  margin-bottom: 20px;
+  animation: corAnimacao 3s infinite alternate; /* Animação */
+}
+
+@keyframes corAnimacao {
+  0% {
+      color: #000000; /* Preto */
+  }
+  100% {
+      color: #ffcc00; /* Dourado */
+  }
+}
