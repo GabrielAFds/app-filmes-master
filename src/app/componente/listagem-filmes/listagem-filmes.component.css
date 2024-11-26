@@ -1,0 +1,79 @@
+.container {
+    color: white;
+    background-color: #000000;
+    margin-top: -25px;
+}
+#back {
+    background-attachment: fixed;
+    background-color: black;
+    height: 450vh;
+}
+.btn {
+    background-color: #f5c518;
+    border: #f5c518;
+    color: black;
+    height: 38px;
+    left: 50%;
+
+}
+.form-control {
+    margin-bottom: 100px;
+    left: 50%;
+}
+.text-center {
+    padding-top: 50px;
+    color: #f5c518;
+    
+    
+}
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .card-text {
+    font-size: 0.9rem;
+    color: white;
+  
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  nav{
+    display: inline-block;
+  background-color:#f5c518;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  margin-bottom: -100px;
+  
+  }
+  nav>a{
+    text-decoration: none;
+
+  }
+  nav>a:hover{
+    text-decoration: underline;
+
+  }
+  
+
+  
+  #btn-voltou{
+    color: #000000;
+
+  }
+  

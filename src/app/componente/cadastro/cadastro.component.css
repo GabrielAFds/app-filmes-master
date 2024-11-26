@@ -1,0 +1,97 @@
+/* Reset e Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* Fundo com gradiente */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupar toda a altura da tela */
+  }
+  
+  /* Container principal */
+  .container {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto translúcido */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Título */
+  .container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #ffcc00; /* Amarelo destaque */
+  }
+  
+  /* Estilização de grupos de formulário */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #444; /* Borda cinza escura */
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Texto branco */
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #ffcc00; /* Destaque na borda ao focar */
+  }
+  
+  /* Botão */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00; /* Amarelo destaque */
+    color: #000; /* Texto preto */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Efeito suave ao passar o mouse */
+  }
+  
+  .btn:hover {
+    background-color: #e6b800; /* Amarelo mais escuro ao passar o mouse */
+  }
+  
+  /* Rodapé do formulário */
+  .form-footer {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  
+  .form-footer a {
+    color: #ffcc00; /* Destaque na cor do link */
+    text-decoration: none;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+  }
