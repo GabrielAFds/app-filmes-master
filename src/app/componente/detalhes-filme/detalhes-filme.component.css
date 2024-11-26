@@ -7,6 +7,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     color: #fff;
+    
   }
   
   h1 {
@@ -86,7 +87,7 @@
   #atras{
     background-color: rgb(27, 27, 27);
     margin-top: -51px;
-    height: 100vh;
+    height: 125vh;
 
     
   }

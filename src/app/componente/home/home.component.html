@@ -9,35 +9,22 @@
       <p id="sub1">Explore uma vasta seleção de filmes e séries para todos os gostos!</p>
       <button routerLink="/filmes">Comece Agora</button>
     </section>
-  
-    <section class="catalogo" >
+
+    <section class="catalogo" *ngIf="filmes.length > 0">
       <h2>🎬 Catálogo de Filmes</h2>
-      <div  class="filmes">
-        <div class="filme-card">
-          <img class="post" src="https://m.media-amazon.com/images/M/MV5BNTRlNmU1NzEtODNkNC00ZGM3LWFmNzQtMjBlMWRiYTcyMGRhXkEyXkFqcGc@._V1_SX300.jpg" alt="Filme 1">
-          <h3>Joker</h3>
-          <p>Gênero: Crime, drama</p>
-          <button routerLink="filmes/:id" class="bttton">Detalhes</button>
-        </div>
-        <div class="filme-card" >
-          <img class="post" src="https://m.media-amazon.com/images/M/MV5BOTA1Mzc2N2ItZWRiNS00MjQzLTlmZDQtMjU0NmY1YWRkMGQ4XkEyXkFqcGc@._V1_SX300.jpg"  >
-          <h3 > Harry Potter</h3>
-          <p>Gênero: Fantasia / Aventura</p>
-          <button routerLink="filmes/:id" class="bttton">Detalhes</button>
-        </div>
-        <div class="filme-card">
-          <img src="https://m.media-amazon.com/images/M/MV5BZjI5MzdmODctYjA4NS00ZmMxLWJlOWUtOGVhMjA0OGMxMWYzXkEyXkFqcGc@._V1_SX300.jpg" alt="Filme 3">
-          <h3>jumanji</h3>
-          <p>Gênero: Ação / Ficção</p>
-          <button routerLink="filmes/:id" class="bttton">Detalhes</button>
-        </div>
-        <div class="filme-card">
-          <img src="https://m.media-amazon.com/images/M/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_SX300.jpg" alt="Filme 4">
-          <h3>Batman</h3>
-          <p>Gênero: Crime, Drama</p>
-          <button routerLink="filmes/:id" class="bttton">Detalhes</button>
+      <div class="filmes">
+        <div *ngFor="let filme of filmes" class="">
+          <div class="filme-card">
+            <img [src]="filme.Poster" alt="{{ filme.Title }}" />
+            <div class="">
+              <h5 class="">{{ filme.Title }}</h5>
+              <p><strong>Gênero:</strong> {{ filme.Genre }}</p>
+              <button [routerLink]="['/filmes', filme.imdbID]" class="bttton">Detalhes</button>
+            </div>
+          </div>
         </div>
       </div>
+    
     </section>
   
     <footer>

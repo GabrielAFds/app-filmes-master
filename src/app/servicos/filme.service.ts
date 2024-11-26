@@ -18,5 +18,9 @@ export class FilmeService {
   getFilmeById(id: string) {
     return this.http.get(`${this.apiUrl}?apikey=${this.apiKey}&i=${id}`);
   }
+
+  getRelesead(data: string){
+  return this.http.get(`${this.apiUrl}?apikey=${this.apiKey}&i=${data}`);
+  }
 }
 

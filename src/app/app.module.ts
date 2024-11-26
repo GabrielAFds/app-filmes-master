@@ -12,11 +12,10 @@ import { DataBrasilPipe } from './pipe/data-brasil.pipe';
 import { ResumoTextoPipe } from './pipe/resumo-texto.pipe';
 import { HighlightDirective } from './diretivas/highlight.directive';
 import { HidePasswordDirective } from './diretivas/hide-password.directive';
-import { CadastroComponent } from './componente/cadastro/cadastro.component';
 
 
 @NgModule({
-  declarations: [
+  declarations:[
     AppComponent,
     HomeComponent,
     ListagemFilmesComponent,
@@ -24,8 +23,7 @@ import { CadastroComponent } from './componente/cadastro/cadastro.component';
     DataBrasilPipe,
     ResumoTextoPipe,
     HighlightDirective,
-    HidePasswordDirective,
-    CadastroComponent,
+    HidePasswordDirective
   ],
   imports: [
     BrowserModule,
