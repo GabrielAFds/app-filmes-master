@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ScrollService {
   constructor() {}
 
-  // Método para rolar até o topo
+ 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }

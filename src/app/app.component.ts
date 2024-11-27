@@ -12,7 +12,6 @@ export class AppComponent {
 
   constructor(private scrollService: ScrollService) {}
 
-  // Método para chamar o serviço de scroll
   scrollToTop(): void {
     this.scrollService.scrollToTop();
   }

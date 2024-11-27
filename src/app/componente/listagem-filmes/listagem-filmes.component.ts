@@ -2,7 +2,6 @@ import { Component, OnInit , HostListener} from '@angular/core';
 import { FilmeService } from '../../servicos/filme.service';
 import { forkJoin } from 'rxjs';
 
-
 @Component({
   selector: 'app-listagem-filmes',
   templateUrl: './listagem-filmes.component.html',
@@ -47,20 +46,19 @@ export class ListagemFilmesComponent implements OnInit {
         filme.Genre?.includes(this.generoSelecionado)
       );
     } else {
-      this.buscarFilmes(); // Recarrega todos os filmes se nenhum gênero for selecionado
+      this.buscarFilmes(); 
     }
   }
 
   isButtonVisible: boolean = false;
 
-  // Escuta o evento de scroll
   @HostListener('window:scroll', [])
   onScroll() {
-    // Define que o botão será visível quando rolar 200px para baixo
+    
     this.isButtonVisible = window.scrollY > 200;
   }
 
-  // Método para rolar até o topo
+  
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }

@@ -29,14 +29,14 @@ export class HomeComponent implements OnInit {
   }
   isButtonVisible: boolean = false;
 
-  // Escuta o evento de scroll
+  
   @HostListener('window:scroll', [])
   onScroll() {
-    // Define que o botão será visível quando rolar 200px para baixo
+   
     this.isButtonVisible = window.scrollY > 200;
   }
 
-  // Método para rolar até o topo
+  
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
