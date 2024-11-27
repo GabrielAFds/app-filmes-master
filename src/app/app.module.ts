@@ -11,7 +11,7 @@ import { DetalhesFilmeComponent } from './componente/detalhes-filme/detalhes-fil
 import { DataBrasilPipe } from './pipe/data-brasil.pipe';
 import { ResumoTextoPipe } from './pipe/resumo-texto.pipe';
 import { HighlightDirective } from './diretivas/highlight.directive';
-import { HidePasswordDirective } from './diretivas/hide-password.directive';
+import { ImageFallbackDirective } from './diretivas/image-fallback.directive';
 
 
 @NgModule({
@@ -23,8 +23,8 @@ import { HidePasswordDirective } from './diretivas/hide-password.directive';
     DataBrasilPipe,
     ResumoTextoPipe,
     HighlightDirective,
-    HidePasswordDirective
-  ],
+    ImageFallbackDirective,
+],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -4,24 +4,35 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'dataBrasil'
 })
 export class DataBrasilPipe implements PipeTransform {
-  transform(value: string | Date): string {
+  
+  transform(value: string | Date | number): string {
     if (!value) return '';
 
-    // Convertendo a string para Date
-    const data = new Date(value);
+    
+    let data: Date;
+    
+    if (value instanceof Date) {
+      data = value;
+    } else if (typeof value === 'string') {
+      
+      data = new Date(value.replace(/-/g, '/'));
+    } else if (typeof value === 'number') {
+      data = new Date(value);
+    } else {
+      return 'Data inválida';
+    }
 
-    // Verificando se a data é válida
+   
     if (isNaN(data.getTime())) {
-      return 'Data inválida'; // ou qualquer valor de fallback
+      return 'Data inválida';
     }
 
     const dia = data.getDate().toString().padStart(2, '0');
-    const mes = (data.getMonth() + 1).toString().padStart(2, '0'); // Mês começa em 0
+    const mes = (data.getMonth() + 1).toString().padStart(2, '0');
     const ano = data.getFullYear();
 
     return `${dia}/${mes}/${ano}`;
   }
 }
-
 
 

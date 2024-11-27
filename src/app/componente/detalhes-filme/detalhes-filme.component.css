@@ -2,7 +2,7 @@
 .container {
     max-width: 800px;
     margin: 50px auto;
-    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para destacar o conteúdo */
+    background: rgba(0, 0, 0, 0.7); 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -34,26 +34,13 @@
   
   strong {
     font-weight: bold;
-    color: #ffd700; /* Destaque para os títulos */
+    color: #ffd700; 
   }
   
-  @media (max-width: 768px) {
-    .container {
-      margin: 20px;
-      padding: 15px;
-    }
-  
-    h1 {
-      font-size: 2rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
-  }
+ 
   .trad {
     display: inline-block;
-    background-color: hsl(210, 31%, 5%); /* Azul */
+    background-color: hsl(210, 31%, 5%); 
     color: white;
     font-size: 1rem;
     padding: 10px 20px;
@@ -73,7 +60,7 @@
   
   .btn-voltar {
     display: inline-block;
-    background-color: hsl(210, 31%, 5%); /* Azul */
+    background-color: hsl(210, 31%, 5%); 
     color:#ffd700;
     font-size: 1rem;
     padding: 10px 20px;
@@ -87,8 +74,22 @@
   #atras{
     background-color: rgb(27, 27, 27);
     margin-top: -51px;
-    height: 125vh;
+    height: 130vh;
 
     
   }
 
+ @media (max-width: 768px) {
+    .container {
+      margin: 20px;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
