@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , HostListener} from '@angular/core';
 import { FilmeService } from '../../servicos/filme.service';
 import { forkJoin } from 'rxjs';
 
@@ -25,11 +25,11 @@ export class ListagemFilmesComponent implements OnInit {
         const requests = data.Search.map((filme: any) =>
           this.filmeService.getFilmeById(filme.imdbID)
         );
-        // Adicione o tipo explícito no retorno do forkJoin
+       
         forkJoin<any[]>(requests).subscribe((detalhes: any[]) => {
           this.filmes = detalhes;
 
-          // Extrair gêneros únicos
+          
           this.generos = Array.from(
             new Set(
               this.filmes.flatMap((filme: any) => (filme.Genre ? filme.Genre.split(', ') : []))
@@ -46,7 +46,20 @@ export class ListagemFilmesComponent implements OnInit {
         filme.Genre?.includes(this.generoSelecionado)
       );
     } else {
-      this.buscarFilmes(); // Recarrega todos os filmes se nenhum gênero for selecionado
+      this.buscarFilmes(); 
     }
+  }
+
+  isButtonVisible: boolean = false;
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    
+    this.isButtonVisible = window.scrollY > 200;
+  }
+
+  
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

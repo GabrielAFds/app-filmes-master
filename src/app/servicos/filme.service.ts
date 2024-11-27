@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class FilmeService {
 
   private readonly apiUrl = 'http://www.omdbapi.com/';
-  private readonly apiKey = '930ff0ad'; // Substitua pela sua chave de API
+  private readonly apiKey = '930ff0ad'; 
 
   constructor(private http: HttpClient) {}
 
