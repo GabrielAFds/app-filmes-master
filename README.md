@@ -1,5 +1,13 @@
 # AppFilmes
 
+Participantes do Projeto:
+
+William Coelho de Morais
+Gabriel Araujo Farias de Santana 
+Rodolpho Dihego Freire da Rocha Filho 
+João Gunttemberg de Almeida Coimbra 
+João Pedro Silva de Araújo 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
 
 ## Development server
